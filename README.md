@@ -166,6 +166,38 @@ RESTful Web API （也可以叫做 RESTful Web Service）是一种基于 HTTP �
 资源 | GET | PUT | POST | DELETE
 ---- | --- | --- | ---- | ------
 http://example.com/resources | 用于列出集合成员中的所有 URI 或者其他细节信息 | 用其他的集合替换整个当前集合 | 在当前集合中创建一个新的条目，新条目的 URI 通常会自动生成并返回 | 删除整个集合
+http://example.com/resources/item17 | 获取当前集合中的指定资源的表现形式 | 替换当前集合中的指定资源，如果目标不存在，则创建它 | 一般不使用，或者将指定资源视为一个集合，并在其中创建一个新的条目  | 删除当前集合中的指定资源
+
+### 误区
+
+RESTful 架构有一些典型的设计误区。
+
+最常见的一种设计错误，就是 URI 包含动词。因为"资源"表示一种实体，所以应该是名词，URI 不应该有动词，动词应该放在 HTTP 协议中。
+
+举例来说，某个 URI 是 ```/posts/show/1``` ，其中 show 是动词，这个 URI 就设计错了，正确的写法应该是 ```/posts/1``` ，然后用 GET 方法表示 show。
+
+如果某些动作是 HTTP 动词表示不了的，你就应该把动作做成一种资源。比如网上汇款，从账户1向账户2汇款500元，错误的 URI 是：
+
+    POST /accounts/1/transfer/500/to/2
+
+正确的写法是把动词 transfer 改成名词transaction，资源不能是动词，但是可以是一种服务：
+
+    POST /transaction HTTP/1.1
+    Host: 127.0.0.1
+    
+    from=1&to=2&amount=500.00
+
+另一个设计误区，就是在 URI 中加入版本号：
+
+    http://www.example.com/app/1.0/foo
+    http://www.example.com/app/1.1/foo
+    http://www.example.com/app/2.0/foo
+
+因为不同的版本，可以理解成同一种资源的不同表现形式，所以应该采用同一个 URI 。版本号可以在 HTTP 请求头信息的 Accept 字段中进行区分：
+
+    Accept: vnd.example-com.foo+json; version=1.0
+    Accept: vnd.example-com.foo+json; version=1.1
+    Accept: vnd.example-com.foo+json; version=2.0
 
 ### 与本文相关的 HTTP 知识
 
