@@ -8,11 +8,12 @@
 * [目录](#目录)
 * [作者](#作者)
 * [前言](#前言)
-* [什么是REST架构风格](#什么是rest架构风格)
+* [什么是 REST](#什么是-rest)
   * [名词解释](#名词解释)
   * [产生背景](#产生背景)
-* [与本文相关的HTTP知识](#与本文相关的http知识)
-* [什么是RESTful](#什么是restful)
+* [什么是 RESTful](#什么是-restful)
+  * [与本文相关的HTTP知识](#与本文相关的http知识)
+* [什么是 RESTful Web API](#什么是-restful-web-api)
 
 ## 作者
 
@@ -32,12 +33,14 @@ GitHub：[howiehu](http://github.com/howiehu "howiehu")
 
 由于获取资料的途径、个人能力和理解方式等客观因素，本文可能存在许多不足之处，望大家能够谅解，同时也 **非常欢迎大家在 [GitHub](https://github.com/howiehu/about-restful "原文地址") 上提出修改意见** ，十分感谢！
 
-## 什么是REST架构风格
+## 什么是 REST
 
 ### 名词解释
 
 ### 产生背景
 
-## 与本文相关的HTTP知识
+## 什么是 RESTful
 
-## 什么是RESTful
+### 与本文相关的HTTP知识
+
+## 什么是 RESTful Web API
