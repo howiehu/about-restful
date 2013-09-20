@@ -12,8 +12,8 @@
   * [名词解释](#名词解释)
   * [产生背景](#产生背景)
 * [什么是 RESTful](#什么是-restful)
-  * [与本文相关的HTTP知识](#与本文相关的http知识)
 * [什么是 RESTful Web API](#什么是-restful-web-api)
+  * [与本文相关的 HTTP 知识](#与本文相关的-http-知识)
 
 ## 作者
 
@@ -41,6 +41,6 @@ GitHub：[howiehu](http://github.com/howiehu "howiehu")
 
 ## 什么是 RESTful
 
-### 与本文相关的HTTP知识
-
 ## 什么是 RESTful Web API
+
+### 与本文相关的 HTTP 知识
