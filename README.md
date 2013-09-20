@@ -17,7 +17,6 @@
   * [REST 基本概念](#rest-基本概念)
   * [REST 接口设计指导原则](#rest-接口设计指导原则)
   * [REST 核心原则](#rest-核心原则)
-* [什么是 RESTful](#什么是-restful)
 * [什么是 RESTful Web API](#什么是-restful-web-api)
   * [与本文相关的 HTTP 知识](#与本文相关的-http-知识)
 
@@ -64,8 +63,6 @@ REST (Representational State Transfer) 在维基百科上被译为“表征状�
 ### REST 接口设计指导原则
 
 ### REST 核心原则
-
-## 什么是 RESTful
 
 ## 什么是 RESTful Web API
 
