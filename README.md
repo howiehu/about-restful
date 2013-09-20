@@ -154,4 +154,22 @@ REST 的一个重要概念是资源的存在（特定信息的来源），每一
 
 ## 什么是 RESTful Web API
 
+RESTful Web API （也可以叫做 RESTful Web Service）是一种基于 HTTP 和 REST 架构风格的 Web API 实现。它是一个资源的集合，有四个方面的定义：
+
+* 使用基本的 URI，比如 ```http://example.com/resources/``` 。
+* 使用互联网媒体类型表现数据，通常使用的是 JSON，但是也可以使用其他有效的互联网媒体类型。
+* 使用 HTTP 请求方法来支持操作（比如 GET、PUT、POST 或者 DELETE 等 HTTP 动词，Ruby on Rails 4.0 以后的版本中，用 PATCH 代替了 PUT 以便减少数据传输）。
+* API 必须是超文本驱动的。
+
+下面的表格显示了 HTTP 请求方法如何用来实现 Web API：
+
+资源 | GET | PUT | POST | DELETE
+---- | --- | --- | ---- | ------
+http://example.com/resources | 用于列出集合成员中的所有 URI 或者其他细节信息 | 用其他的集合替换整个当前集合 | 在当前集合中创建一个新的条目，新条目的 URI 通常会自动生成并返回 | 删除整个集合
+
 ### 与本文相关的 HTTP 知识
+
+### 一些成熟的 RESTful Web API 框架
+
+* Sinatra
+* ASP.NET Web API
