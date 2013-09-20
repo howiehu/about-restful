@@ -15,7 +15,7 @@
   * [关键目标](#关键目标)
   * [判断是否是 RESTful 的约束条件](#判断是否是-restful-的约束条件)
   * [REST 基本概念](#rest-基本概念)
-    * [词汇重用 vs 随意扩展：HTTP 与 SOAP](#词汇重用-vs-随意扩展-http-与-soap)
+      * [词汇重用 vs 随意扩展：HTTP 与 SOAP](#词汇重用-vs-随意扩展http-与-soap)
   * [REST 接口设计指导原则](#rest-接口设计指导原则)
   * [REST 核心原则](#rest-核心原则)
 * [什么是 RESTful Web API](#什么是-restful-web-api)
